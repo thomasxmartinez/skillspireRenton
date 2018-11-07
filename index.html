@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>title</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
-  <body>
-  
-  </body>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <style>
+        .red-square {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+        }
+    </style>
+
+    <div class="red-square"></div>
+
+    <script>
+        const redSquare = document.querySelector('.red-square');
+        redSquare.style.backgroundColor = 'limegreen';
+    </script>
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+    </ul>
+    <script>
+        const elementsToChange = document.querySelectorAll('.js-target');
+        for (let i = 0; i < elementsToChange.length; i++) {
+            const currentElement = elementsToChange[i];
+            currentElement.innerText = "Modified by JavaScript!";
+        }
+    </script>
+    <button class="event-button">Click me!</button>
+    <script>
+        const button = document.querySelector('.event-button');
+        button.addEventListener('click', function() {
+            alert("Hey there!");
+        });
+    </script>
+
+    <input placeholder="type into me!" class="input-to-copy" />
+    <p class="p-to-copy-to">Nothing has happened yet.</p>
+    <script>
+        const input = document.querySelector('.input-to-copy');
+        const paragraph = document.querySelector('.p-to-copy-to');
+
+        input.addEventListener("keyup", function() {
+            paragraph.innerText = input.value;
+        });
+    </script>
+</body>
+
 </html>
