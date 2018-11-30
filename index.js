@@ -180,13 +180,13 @@ const courses = [
 ]
 
 
-for (let i = 0; i < courses.length; i++) {
-    console.log(courses[i]);
-}
+// for (let i = 0; i < courses.length; i++) {
+//     console.log(courses[i]);
+// }
 
-courses.forEach(function(course) {
-    console.log(courses)
-})
+// courses.forEach(function(course) {
+//     console.log(courses)
+// })
 
 //i++ = i + 1
 //write an array with 6 indexes of objects that contain an artist and a song
@@ -211,10 +211,17 @@ const songs = [
     { artist: "s", song: "do" },
 ]
 
-for (let i = 0; i < songs.length; i++) {
-    console.log(songs[i]);
-}
+// for (let i = 0; i < songs.length; i++) {
+//     console.log(songs[i]);
+// }
 
 // songs.forEach(function(songs) {
 //     console.log(songs + `${songs.artist}`)
 // })
+
+let dog = {
+    "bark": "woof",
+    "eat": "food",
+}
+
+console.log(dog.eat);
