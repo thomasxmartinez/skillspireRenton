@@ -208,7 +208,7 @@ const songs = [
     { artist: "m", song: "so" },
     { artist: "e", song: "la" },
     { artist: "d", song: "ti" },
-    { artist: "s", song: "do" },
+    { artist: "s", song: "do" }
 ]
 
 // for (let i = 0; i < songs.length; i++) {
@@ -225,3 +225,38 @@ let dog = {
 }
 
 console.log(dog.eat);
+
+function iAmFunc(str, int) {
+    return str + int
+}
+
+console.log(iAmFunc("yum", 6));
+
+var arrStuff = ['pig', 'pajamas', 'applebees two for one but I order both for myself'];
+
+function doodle(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        if (arr[i] === 'pig') {
+            console.log('dont be mean to the pigs')
+        } else {
+            console.log(arr.length)
+        }
+    }
+}
+
+function doodleTwo(arrAyeLmao) {
+    var arrStuff = ['pig', 'pajamas', 'applebees two for one but I order both for myself'];
+    console.log(arrAyeLmao.length);
+    console.log('jump');
+}
+
+doodle(arrStuff);
+
+
+for (var i = 1; i < 101; i++) {
+    if (i % 15 === 0) console.log("FizzBuzz");
+    else if (i % 3 === 0) console.log("Fizz");
+    else if (i % 5 === 0) console.log("Buzz");
+    else console.log(i);
+}

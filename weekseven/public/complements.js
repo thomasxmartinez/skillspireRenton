@@ -6,7 +6,7 @@ document
                 return res.json()
             })
             .then(function(data) {
-                document.querySelector(".complement").innerText = data.complement;
+                document.querySelector(".complement").innerHTML = "<img src=\"https://www.wdjx.com/wp-content/uploads/2018/10/Animal.Dog_.Golden.Retriever.Puppies.jpg\"/>";;
             })
             .catch(function(err) {
                 console.error(err);
