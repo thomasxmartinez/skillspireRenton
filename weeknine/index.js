@@ -144,3 +144,5 @@ NaN == NaN //NaN is the result of a statement that doesnt make sense, the reason
 
     (('5' - 1) > 3) && (('10' + 1) > 100) // the left evaluates to true since 4 is greater than 3. the 
     // right is also true since 101 is greater than 100.
+
+//Next week we will be going over functions again, operators, if else statements, variable creation
